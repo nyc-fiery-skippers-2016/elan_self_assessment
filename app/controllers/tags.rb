@@ -5,11 +5,14 @@ get '/tags' do
 end
 
 get '/posts/:id/tags/new' do
+  # Stylistically don't the space in params[ :id ] is not needed
   @post_id = params[ :id ].to_i
   erb :'/tags/new'
 end
 
 post '/tags' do
+  # Stylistically don't the space in where( id: params[:post_id] ) is not needed
+  # also stay consistent params[:post_id] vs params[ :post_id ]
   post = Post.where( id: params[:post_id] )
   post.first.tags << Tag.create( title: params[:tag] )
   redirect "/posts/#{ post.first.id }"
