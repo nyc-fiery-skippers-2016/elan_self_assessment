@@ -1,0 +1,11 @@
+<% if current_user.topics.count == 0 %>
+  <h3 class="first-topic">This is exciting! Your very first topic! <br> Below you'll find the form to submit a new topic. Fill it out and hit the nice button. Watch The Shadow Realm do it's magic!</h3>
+<% else %>
+  <h3 class="user-new-topic">We're so happy to have you contribute yet another great topic! Go ahead, you know the drill.</h3>
+<% end %>
+
+<form class="new-topic" action="/topics" method="post">
+  <input class="title" type="text" name="title" placeholder="Title of Topic">
+  <br>
+  <input class="submit" type="submit" value="Create New Topic">
+</form>

@@ -1,0 +1,19 @@
+<h1 class="welcome-home">Welcome Back <%= current_user.name %></h1>
+
+<div id="home-links">
+  <a href="/topics">View All Topics</a>
+  <br>
+  <a href="/topics/new">Create New Topic</a>
+  <br>
+  <a href="/tags">View All Posts By Tag</a>
+</div>
+
+
+<h2 class="recent-posts-intro">Here are the most recent posts:</h2>
+
+<ul class="posts">
+  <% @posts.each do | post | %>
+    <li><a href="/posts/<%= post.id %>"><%= post.title %></a></li>
+    <br>
+  <% end %>
+</ul>

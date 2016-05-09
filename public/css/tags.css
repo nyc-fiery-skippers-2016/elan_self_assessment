@@ -1,0 +1,39 @@
+h3.add-tag-header {
+  clear: both;
+  text-align: center;
+  font-size: 50px;
+}
+
+ul.all-post-tags {
+  list-style: none;
+}
+
+ul.all-post-tags li {
+  display: inline;
+  padding: 15px;
+}
+
+form.each-tag {
+  display: inline;
+}
+
+div.tags-div {
+  text-align: center;
+}
+
+h3.pick-tag-head {
+  clear: both;
+  font-size: 50px;
+  text-align: center;
+}
+
+div#display-tags {
+  text-align: center;
+}
+
+div#display-tags a {
+  color: #8C001A;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px;
+}

@@ -1,0 +1,7 @@
+<h3 class="add-tag-header">Add a tag</h3>
+
+<form class="new-tag" action="/tags" method="post">
+  <input type="hidden" name="post_id" value="<%= @post_id %>">
+  <input type="text" name="tag" placeholder="Tag Title">
+  <input type="submit" value="Add Tag">
+</form>

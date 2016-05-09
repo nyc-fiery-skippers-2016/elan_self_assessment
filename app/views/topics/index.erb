@@ -1,0 +1,11 @@
+<h3 class="topics-head">All Topics</h3>
+
+<div id="center">
+  <a class="view-topics-link" href="/topics/<%= current_user.username %>">View Your Topics</a>
+
+  <ul class="list-topics">
+    <% @topics.each do | topic | %>
+        <li><a href="/topics/<%= current_user.username %>/<%= topic.id %>"><%= topic.title %></a></li>
+    <% end %>
+  </ul>
+</div>

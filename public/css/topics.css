@@ -1,0 +1,58 @@
+h3.topics-head {
+  clear: both;
+  text-align: center;
+  font-size: 50px;
+}
+
+div#center {
+  text-align: center;
+}
+
+a.view-topics-link {
+  font-size: 30px;
+  text-decoration: none;
+  color: #8C001A;
+}
+
+ul.list-topics {
+  list-style: none;
+}
+
+ul.list-topics li {
+  padding: 10px;
+}
+
+ul.list-topics li a {
+  text-decoration: none;
+  color: #8C001A;
+  font-size: 30px;
+}
+
+h3.topic-title {
+  clear: both;
+  text-align: center;
+  font-size: 50px;
+}
+
+ul.topic-posts-list {
+  list-style: none;
+  text-align: center;
+}
+
+ul.topic-posts-list li {
+  padding: 15px;
+}
+
+ul.topic-posts-list li a {
+  color: #8C001A;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a.new-post-link {
+  color: #8C001A;
+  float: right;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 150px;
+}

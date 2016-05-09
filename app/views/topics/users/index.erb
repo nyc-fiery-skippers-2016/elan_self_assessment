@@ -1,0 +1,7 @@
+<h3 class="your-topics-header">These are all your topics!</h3>
+
+<ul class="your-topics">
+  <% Topic.where( user_id: current_user.id ).each do | topic | %>
+    <li><a href="/topics/<%= current_user.username %>/<%= topic.id %>"><%= topic.title %></a></li>
+  <% end %>
+</ul>

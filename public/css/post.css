@@ -1,0 +1,32 @@
+h3.post-title {
+  clear: both;
+  text-align: center;
+  font-size: 50px;
+}
+
+div.tag-link-div {
+    text-align: center;
+}
+
+a.add-tag-link {
+  text-decoration: none;
+  color: #8C001A;
+  font-size: 20px;
+}
+
+h3.tagged-posts-head {
+  clear: both;
+  text-align: center;
+  font-size: 30px;
+}
+
+div.all-tagged-posts {
+  text-align: center;
+}
+
+div.all-tagged-posts a {
+  font-size: 25px;
+  color: #8C001A;
+  padding: 15px;
+  text-decoration: none;
+}

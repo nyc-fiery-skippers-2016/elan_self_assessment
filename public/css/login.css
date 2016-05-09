@@ -1,0 +1,27 @@
+h1.login-welcome {
+  text-align: center;
+  margin-top: 80px;
+  color: #8C001A;
+}
+
+form.login-form {
+  text-align: center;
+}
+
+p.sign-up-link {
+  color: #8C001A;
+  text-align: center;
+}
+
+
+div.goku {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+}
+
+a.link-here {
+  color: #8C001A;
+}

@@ -1,0 +1,17 @@
+<h3 class="topic-title"><%= @topic.first.title %></h3>
+
+<ul class="topic-posts-list">
+  <% Post.where(topic_id: @topic.first.id).each do | post | %>
+    <li><a href="/posts/<%= post.id %>"><%= post.title %></a></li>
+  <% end %>
+</ul>
+
+<a class="new-post-link" href="/posts/new">Create New Post Here</a>
+
+<% if @topic.first.user_id == current_user.id %>
+  <form action="/topics" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="topic" value="<%= @topic.first.id %>">
+    <input type="submit" value="Delete This Topic">
+  </form>
+<% end %>

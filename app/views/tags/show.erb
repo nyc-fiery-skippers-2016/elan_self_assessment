@@ -1,0 +1,10 @@
+<h3 class="pick-tag-head">Pick A Tag</h3>
+
+<div id="display-tags">
+  <% @tags.each do | tag | %>
+    <% if !@tags_used.include?( tag.title ) %>
+      <a href="/tags/<%= tag.title %>"><%= tag.title %></a>
+    <% end %>
+    <% @tags_used << tag.title %>
+  <% end %>
+</div>

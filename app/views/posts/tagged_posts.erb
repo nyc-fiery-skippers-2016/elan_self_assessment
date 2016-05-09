@@ -1,0 +1,7 @@
+<h3 class="tagged-posts-head">Here Are All The Posts With The Tag: <%= @tag.title %></h3>
+
+<div class="all-tagged-posts">
+  <% @posts.each do | post | %>
+    <a href="/posts/<%= post.id %>"><%= post.title %></a>
+  <% end %>
+</div>

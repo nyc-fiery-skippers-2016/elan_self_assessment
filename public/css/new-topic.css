@@ -1,0 +1,30 @@
+h3.first-topic {
+  text-align: center;
+  clear: both;
+}
+
+h3.user-new-topic {
+  text-align: center;
+  clear: both;
+}
+
+form {
+  text-align: center;
+}
+
+form.new-topic input.title {
+  width: 550px;
+  height: 100px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+form.new-topic input.submit {
+  width: 550px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: #8C001A;
+  color: #8CA93E;
+  font-size: 50px;
+}

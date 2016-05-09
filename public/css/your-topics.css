@@ -1,0 +1,20 @@
+h3.your-topics-header {
+  clear: both;
+  text-align: center;
+  font-size: 50px;
+}
+
+ul.your-topics {
+  list-style: none;
+  text-align: center;
+}
+
+ul.your-topics li {
+  padding: 15px;
+}
+
+ul.your-topics li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #8C001A;
+}

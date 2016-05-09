@@ -1,0 +1,42 @@
+h1.welcome-home {
+  text-align: center;
+  color: #8C001A;
+  clear: both;
+}
+
+div#home-links {
+  text-align: center;
+}
+
+div#home-links a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #8C001A;
+}
+
+h2.recent-posts-intro {
+  margin-top: 50px;
+  text-align: center;
+  color: #8C001A;
+}
+
+ul.posts {
+  width: 700px;
+  height: 600px;
+  list-style: none;
+  margin: auto;
+  background-color: #6F0564;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+ul.posts li {
+  margin-top: 30px;
+}
+
+ul.posts li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #8CA93E;
+}

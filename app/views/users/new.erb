@@ -1,0 +1,20 @@
+<h1>You are about to register for The Shadow Realm Forum!</h1>
+<h3>Are you prepared for what's to be read?</h3>
+
+<% if @errors %>
+  <ul>
+    <% @errors.each do | error | %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+<% elsif @user_exist_error %>
+  <h3><%= @user_exist_error %></h3>
+<% end %>
+
+<form class="register-form" action="/users/new" method="post">
+  <input type="text" name="user[name]" placeholder="Ex. John Doe">
+  <input type="text" name="user[email]" placeholder="Ex. John@example.com">
+  <input type="text" name="user[username]" placeholder="username">
+  <input type="password" name="user[password]" placeholder="password">
+  <input type="submit" value="Register At Your Own Risk">
+</form>

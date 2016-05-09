@@ -1,0 +1,22 @@
+body {
+  /*background: rgb(169,3,41);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%, rgba(96,1,19,1) 44%, rgba(109,0,25,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(96,1,19,1) 44%,rgba(109,0,25,1) 100%);
+  background: radial-gradient(ellipse at center,  rgba(169,3,41,1) 0%,rgba(96,1,19,1) 44%,rgba(109,0,25,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );*/
+  background: #F6FA9C;
+}
+
+nav {
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #8C001A;
+  padding: 15px;
+}
