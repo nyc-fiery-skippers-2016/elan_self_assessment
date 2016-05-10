@@ -1,15 +1,13 @@
 $(document).ready(function() {
-  $(".each-tag").on('submit', function( event ) {
-    event.preventDefault();
+  $(".each-tag").submit(function( e ) {
+    e.preventDefault();
     var $info = $(".each-tag input").serialize();
-    var tagLi = $(this).parent()
-    
     $.ajax({
       method: "DELETE",
       url: '/tags',
       data: $info
     }).done(function( html ) {
-      $( tagLi ).remove();
-    });
+      $("ul.all-post-tags").html($(html).find("ul.all-post-tags"))
+    })
   });
 });

@@ -28,11 +28,7 @@ get '/tags/:tag_title' do
 end
 
 delete '/tags' do
-  if request.xhr?
-    tag = Tag.find_by( id: params[:id] )
-    tag.destroy
-    return ""
-  else
-    redirect "/posts/#{ params[:post_id] }"
-  end
+  tag = Tag.find_by( id: params[:id] )
+  tag.destroy
+  redirect "/posts/#{ params[:post_id] }"
 end
